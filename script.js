@@ -26,10 +26,10 @@ document.getElementById('no').addEventListener('click', () => {
             hint.innerText = 'Hứa sẽ ngoan 😇';
             break;
         case 3:
-            hint.innerText = 'TÔI KHÔNG CHO PHÉP EM BẤM "HONG" 😡';
             break;
-        default:
             hint.innerText = 'Giận😡';
+        default:
+            hint.innerText = 'TÔI KHÔNG CHO PHÉP EM BẤM "HONG" 😡';
     }
     count++;
 });
