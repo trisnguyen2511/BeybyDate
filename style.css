@@ -1,0 +1,38 @@
+body {
+    background-color: #ffe6e6;
+}
+
+#title {
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: hotpink;
+    font-size: 2rem;
+}
+
+#selection {
+    text-align: center;
+}
+
+#hintNo {
+    color: #fb33f7;
+    font-size: 1.2rem;
+}
+
+.answerBtn {
+    /* display: block; */
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #ffccff;
+    border: 2px solid hotpink;
+    border-radius: 12px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: hotpink;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+.answerBtn:hover {
+    background-color: #ff99ff;
+}
