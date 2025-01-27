@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(230, 255, 180);
+    background-color: pink;
 }
 
 #title {
@@ -12,7 +12,6 @@ body {
 
 #selectArea{
     display: block;
-    /* margin-left: 50%; */
     text-align: center;
 }
 
@@ -23,12 +22,10 @@ body {
 }
 
 .imgchoose  {
-    /* max-width: 50%;
-    min-width: 20%; */
-    max-width: 10rem;
+    max-width: 8rem;
 }
 
 .checkboxArea {
     /* display: inline-block; */
-    max-width: 50%;
+    /* max-width: 50%; */
 }

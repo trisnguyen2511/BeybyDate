@@ -1,9 +1,9 @@
 const urlwet = "https://api.github.com/repos/trisnguyen2511/BeybyDate/contents/choosefood/resources/wet"
 const urlnotwet = "https://api.github.com/repos/trisnguyen2511/BeybyDate/contents/choosefood/resources/notwet"
 
-const url = (new URL(document.location)).searchParams.get("wet") || 'no' === 'yes' ? urlwet : urlnotwet;
+const url = ((new URL(document.location)).searchParams.get("wet") || 'no') === 'yes' ? urlwet : urlnotwet;
 
-fetch(urlwet)
+fetch(url)
 	.then(response => response.json())
 	.then(data => {
         data.forEach(element => {
