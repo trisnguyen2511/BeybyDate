@@ -1,5 +1,8 @@
 let count = 0;
 
+const url = '/BeybyDate/yay/';
+// const url = '/yay/';
+
 document.getElementById('yes').addEventListener('click', () => {
     window.location.href = '/yay/?response=yes';
 });
