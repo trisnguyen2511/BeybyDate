@@ -1,7 +1,7 @@
 let count = 0;
 
 document.getElementById('yes').addEventListener('click', () => {
-    alert('yes');
+    window.location.href = '/yay/?response=yes';
 });
 document.getElementById('no').addEventListener('click', () => {
     const button = document.getElementById('no');
@@ -26,8 +26,8 @@ document.getElementById('no').addEventListener('click', () => {
             hint.innerText = 'Hứa sẽ ngoan 😇';
             break;
         case 3:
-            break;
             hint.innerText = 'Giận😡';
+            break;
         default:
             hint.innerText = 'TÔI KHÔNG CHO PHÉP EM BẤM "HONG" 😡';
     }

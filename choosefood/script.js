@@ -1,0 +1,10 @@
+// let count = 0;
+
+// document.getElementById('yes').addEventListener('click', () => {
+//     let params = (new URL(document.location)).searchParams;
+//     window.location.href = '/kindfood/?response=yes&eat=yes';
+// });
+// document.getElementById('no').addEventListener('click', () => {
+//     window.location.href = '/kindfood/?response=yes&eat=yes';
+// });
+

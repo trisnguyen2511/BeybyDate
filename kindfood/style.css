@@ -1,11 +1,12 @@
 body {
-    background-color: #ffe6e6;
+    /* background-color: rgb(217, 240, 255); */
+    background: linear-gradient(to right, blue -20%, orange 120%);
 }
 
 #title {
     text-align: center;
     font-family: 'Comic Sans MS', cursive, sans-serif;
-    color: hotpink;
+    color: #b7ffb2;
     font-size: 2rem;
     margin: 10px;
 }
