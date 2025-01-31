@@ -2,7 +2,7 @@ const urlPlace = "https://api.github.com/repos/trisnguyen2511/BeybyDate/contents
 const urlwet = "https://api.github.com/repos/trisnguyen2511/BeybyDate/contents/choosefood/resources/wet"
 const urlnotwet = "https://api.github.com/repos/trisnguyen2511/BeybyDate/contents/choosefood/resources/notwet"
 
-const url = '/BeybyDate/thanhkiu/';
+var url = '/BeybyDate/thanhkiu/';
 // var url = '/thankiu/';
 
 fetch(urlPlace)
