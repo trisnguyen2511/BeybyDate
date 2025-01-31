@@ -43,3 +43,9 @@ body {
     display: inline-block;
     font-size: 1.5rem;
 }
+
+#choxiu {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}

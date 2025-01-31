@@ -91,9 +91,13 @@ function sendMail(food,place,url) {
         place: place,
     }
 
+    document.getElementById('choxiu').hidden = false;
+
     emailjs.send('service_wd4ugyd', 'template_a0g9xwy', paramsSend).then(function(response) {
         window.location.href = url;
+        ocument.getElementById('choxiu').hidden = true;
     }, function(error) {
+        document.getElementById('choxiu').hidden = true;
         console.log('FAILED...', error);
         alert("Chớt tui lỗi lỗi lỗi rồi 🥺🥺");
     }
