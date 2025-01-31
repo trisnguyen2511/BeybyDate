@@ -77,7 +77,6 @@ document.getElementById('yes').addEventListener('click', () => {
     }
     const currentParams = new URLSearchParams(window.location.search);
     currentParams.set('selectedFood', selected.join(','));
-    url = url += ('?' + currentParams.toString());
-    console.log(url);
+    url = (url + ('?' + currentParams.toString()));
     window.location.href = url;
 });

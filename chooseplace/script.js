@@ -66,7 +66,7 @@ function convertToClassName(str) {
 document.getElementById('yes').addEventListener('click', () => {
     const selected = Array.from(document.querySelectorAll('input[type="checkbox"]:checked')).map(x => x.value);
     if (selected.length === 0) {
-        alert("Beyby chọn một món đi mò... hong lẽ để 2 mình nhịn đóiiiiiii 🥺🥺");
+        alert("Hong chọn nơi đi choi mà ăn xong gòi dề là bùn hiu lunnn ó 🥺🥺");
         return;
     }
     const currentParams = new URLSearchParams(window.location.search);
