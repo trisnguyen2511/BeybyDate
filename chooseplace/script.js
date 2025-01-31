@@ -1,4 +1,4 @@
-const urlPlace = "https://api.github.com/repos/trisnguyen2511/BeybyDate/contents/chooseplace/resources"
+const urlPlace = "https://api.github.com/repos/trisnguyen2511/BeybyDate/contents/chooseplace/resources/place"
 const urlwet = "https://api.github.com/repos/trisnguyen2511/BeybyDate/contents/choosefood/resources/wet"
 const urlnotwet = "https://api.github.com/repos/trisnguyen2511/BeybyDate/contents/choosefood/resources/notwet"
 
