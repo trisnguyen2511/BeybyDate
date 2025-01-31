@@ -5,7 +5,7 @@ const urlGet = ((new URL(document.location)).searchParams.get("wet") || 'no') ==
 
 const chosefood = ['sushi','mixomtau'];
 
-const url = '/BeybyDate/chooseplace/';
+var url = '/BeybyDate/chooseplace/';
 // var url = '/chooseplace/';
 
 fetch(urlGet)
