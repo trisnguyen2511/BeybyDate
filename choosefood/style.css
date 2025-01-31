@@ -10,6 +10,14 @@ body {
     margin: 10px;
 }
 
+#subtitle {
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: rgb(0, 169, 51);
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
 #selectArea{
     display: block;
     text-align: center;
@@ -28,4 +36,23 @@ body {
 .checkboxArea {
     /* display: inline-block; */
     /* max-width: 50%; */
+}
+
+#selection {
+    text-align: center;
+}
+
+.answerBtn {
+    /* display: block; */
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #ffccff;
+    border: 2px solid hotpink;
+    border-radius: 12px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: hotpink;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.5rem;
 }

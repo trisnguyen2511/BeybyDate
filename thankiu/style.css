@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(230, 255, 180);
+}
+
+#title {
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: hotpink;
+    font-size: 2rem;
+    margin: 10px;
+}
+
+#selection {
+    text-align: center;
+}
+
+#hintNo {
+    color: #fb33f7;
+    font-size: 1.2rem;
+}
+
+#no{
+    max-width: 15rem;
+}
+
+.answerBtn {
+    /* display: block; */
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #ffccff;
+    border: 2px solid hotpink;
+    border-radius: 12px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: hotpink;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+#imgbegging{
+    /* width: auto;
+    height: auto; */
+    max-width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.answerBtn:hover {
+    background-color: #ff99ff;
+}

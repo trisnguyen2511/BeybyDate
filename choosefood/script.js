@@ -1,9 +1,14 @@
 const urlwet = "https://api.github.com/repos/trisnguyen2511/BeybyDate/contents/choosefood/resources/wet"
 const urlnotwet = "https://api.github.com/repos/trisnguyen2511/BeybyDate/contents/choosefood/resources/notwet"
 
-const url = ((new URL(document.location)).searchParams.get("wet") || 'no') === 'yes' ? urlwet : urlnotwet;
+const urlGet = ((new URL(document.location)).searchParams.get("wet") || 'no') === 'yes' ? urlwet : urlnotwet;
 
-fetch(url)
+const chosefood = ['sushi','mixomtau'];
+
+const url = '/BeybyDate/chooseplace/';
+// var url = '/chooseplace/';
+
+fetch(urlGet)
 	.then(response => response.json())
 	.then(data => {
         data.forEach(element => {
@@ -20,6 +25,10 @@ fetch(url)
             img.classList.add('imgchoose');
             img.name = element.nameclass
             img.htmlFor = element.nameclass;
+            img.onclick = function() {
+                const checkbox = document.getElementById(element.nameclass);
+                checkbox.checked = !checkbox.checked;
+            }
             selectDiv.appendChild(img);
             
             const checkboxArea = document.createElement('div');
@@ -31,6 +40,9 @@ fetch(url)
             checkbox.id = element.nameclass;
             checkbox.name = element.nameclass;
             checkbox.value = element.nameclass;
+            if(chosefood.includes(element.nameclass)) {
+                checkbox.checked = true
+            }
             checkboxArea.appendChild(checkbox);
             
             const label = document.createElement('label');
@@ -56,3 +68,16 @@ function convertToClassName(str) {
     
     return result;
 }
+
+document.getElementById('yes').addEventListener('click', () => {
+    const selected = Array.from(document.querySelectorAll('input[type="checkbox"]:checked')).map(x => x.value);
+    if (selected.length === 0) {
+        alert("Beyby chọn một món đi mò... hong lẽ để 2 mình nhịn đóiiiiiii 🥺🥺");
+        return;
+    }
+    const currentParams = new URLSearchParams(window.location.search);
+    currentParams.set('selectedFood', selected.join(','));
+    url = url += ('?' + currentParams.toString());
+    console.log(url);
+    window.location.href = url;
+});
