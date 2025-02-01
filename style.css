@@ -4,7 +4,9 @@ body {
 
 #title {
     text-align: center;
-    font-family: "Comic Sans MS", "Comic Sans", sans-serif; 
+    /* font-family: 'Patrick Hand', sans-serif;  */
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Patrick Hand', sans-serif;
     color: hotpink;
     font-size: 2rem;
     margin: 10px;
@@ -30,7 +32,7 @@ body {
     background-color: #ffccff;
     border: 2px solid hotpink;
     border-radius: 12px;
-    font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+    font-family: 'Patrick Hand', sans-serif;
     color: hotpink;
     cursor: pointer;
     text-align: center;
