@@ -1,12 +1,13 @@
 body {
     /* background-color: rgb(217, 240, 255); */
-    background: linear-gradient(to right, blue -20%, orange 120%);
+    /* background: linear-gradient(to right, blue -20%, orange 120%); */
+    background-color: #ffd5a2;
 }
 
 #title {
     text-align: center;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    color: #b7ffb2;
+    font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+    color: #ff5601;
     font-size: 2rem;
     margin: 10px;
 }
@@ -31,7 +32,7 @@ body {
     background-color: #ffccff;
     border: 2px solid hotpink;
     border-radius: 12px;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: "Comic Sans MS", "Comic Sans", sans-serif;
     color: hotpink;
     cursor: pointer;
     text-align: center;
@@ -50,4 +51,10 @@ body {
 
 .answerBtn:hover {
     background-color: #ff99ff;
+}
+
+@media (min-width: 768px) {
+    #imgbegging{
+        max-width: 30%;
+    }
 }

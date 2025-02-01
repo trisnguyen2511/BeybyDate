@@ -4,7 +4,7 @@ body {
 
 #title {
     text-align: center;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: "Comic Sans MS", "Comic Sans", sans-serif;
     color: hotpink;
     font-size: 2rem;
     margin: 10px;
@@ -30,7 +30,7 @@ body {
     background-color: #ffccff;
     border: 2px solid hotpink;
     border-radius: 12px;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: "Comic Sans MS", "Comic Sans", sans-serif;
     color: hotpink;
     cursor: pointer;
     text-align: center;
@@ -41,7 +41,7 @@ body {
 #imgbegging{
     /* width: auto;
     height: auto; */
-    max-width: 70%;
+    max-width: 60%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -49,4 +49,10 @@ body {
 
 .answerBtn:hover {
     background-color: #ff99ff;
+}
+
+@media (max-width: 768px) {
+    #imgbegging{
+        max-width: 90%;
+    }
 }
