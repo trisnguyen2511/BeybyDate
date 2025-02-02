@@ -1,9 +1,7 @@
 const urlPlace = "https://api.github.com/repos/trisnguyen2511/BeybyDate/contents/chooseplace/resources/place"
-const urlwet = "https://api.github.com/repos/trisnguyen2511/BeybyDate/contents/choosefood/resources/wet"
-const urlnotwet = "https://api.github.com/repos/trisnguyen2511/BeybyDate/contents/choosefood/resources/notwet"
 
-var url = '/BeybyDate/thankiu/';
-// var url = '/thankiu/';
+var url = '/BeybyDate/note/';
+// var url = '/note/';
 
 fetch(urlPlace)
 	.then(response => response.json())
@@ -72,85 +70,5 @@ document.getElementById('yes').addEventListener('click', () => {
     const currentParams = new URLSearchParams(window.location.search);
     currentParams.set('selectedPlace', selected.join(','));
     url = url += ('?' + currentParams.toString());
-    var food = (new URLSearchParams(window.location.search)).get('selectedFood');
-    var place = selected.join(',');
-    //convert to class name
-    place = place.split(',').map(x => mapNamePlace.get(x)).join(',');
-    food = food.split(',').map(x => mapNameFood.get(x)).join(',');
-
-    sendMail(food,place,url);
+    window.location.href = url;
 });
-
-function sendMail(food,place,url) {
-    let paramsSend ={
-        reply_to: 'tris1',
-        subject: 'Respond from my Beyby',
-        to_name: 'Tris',
-        from_name: 'Beyby',
-        food: food,
-        place: place,
-    }
-
-    document.getElementById('choxiu').hidden = false;
-
-    emailjs.send('service_wd4ugyd', 'template_a0g9xwy', paramsSend).then(function(response) {
-        window.location.href = url;
-        ocument.getElementById('choxiu').hidden = true;
-    }, function(error) {
-        document.getElementById('choxiu').hidden = true;
-        console.log('FAILED...', error);
-        alert("Chớt tui lỗi lỗi lỗi rồi 🥺🥺");
-    }
-    );
-}
-
-var mapNameFood = new Map();
-var mapNamePlace = new Map();
-getMapAllName();
-
-function getMapAllName(){
-    getMapNameFood();
-    getMapNamePlace();
-}
-
-function getMapNamePlace(){
-    //fetch url and push to mapName
-    fetch(urlPlace)
-    .then(response => response.json())
-    .then(data => {
-        data.forEach(element => {
-            // remove extention of file
-            element.name = element.name.replace(/\.[^/.]+$/, "");
-            element.nameclass = convertToClassName(element.name.replace(/\.[^/.]+$/, ""));
-            mapNamePlace.set(element.nameclass,element.name);
-        });
-    })
-    .catch(err => console.error(err));
-}
-
-function getMapNameFood(){
-    //fetch url and push to mapName
-    fetch(urlwet)
-	.then(response => response.json())
-	.then(data => {
-        data.forEach(element => {
-            // remove extention of file
-            element.name = element.name.replace(/\.[^/.]+$/, "");
-            element.nameclass = convertToClassName(element.name.replace(/\.[^/.]+$/, ""));
-            mapNameFood.set(element.nameclass,element.name);
-        });
-    })
-    .catch(err => console.error(err));
-    //fetch url and push to mapName
-    fetch(urlnotwet)
-    .then(response => response.json())
-    .then(data => {
-        data.forEach(element => {
-            // remove extention of file
-            element.name = element.name.replace(/\.[^/.]+$/, "");
-            element.nameclass = convertToClassName(element.name.replace(/\.[^/.]+$/, ""));
-            mapNameFood.set(element.nameclass,element.name);
-        });
-    })
-    .catch(err => console.error(err));
-}

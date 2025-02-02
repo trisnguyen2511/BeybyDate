@@ -1,0 +1,63 @@
+body {
+    background-color: pink;
+}
+
+#title {
+    text-align: center;
+    font-family: 'Patrick Hand', sans-serif;
+    color: hotpink;
+    font-size: 2rem;
+    margin: 10px;
+}
+
+#selectArea{
+    display: block;
+    text-align: center;
+}
+
+.selectDiv {
+    display: inline-block;
+    margin: 20px;
+    max-width: 50%;
+}
+
+.imgchoose  {
+    max-width: 8rem;
+}
+
+#selection {
+    text-align: center;
+}
+
+.answerBtn {
+    /* display: block; */
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #ffccff;
+    border: 2px solid hotpink;
+    border-radius: 12px;
+    font-family: 'Patrick Hand', sans-serif;
+    color: hotpink;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+#choxiu {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#subtitle {
+    text-align: center;
+    font-family: 'Patrick Hand', sans-serif;
+    color: rgb(0, 169, 51);
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+#kuteInput {
+    width: 80%;
+}

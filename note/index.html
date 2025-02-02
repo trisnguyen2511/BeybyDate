@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Beyby Valentine's Date Invitation</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("5aDkJ1j1g2j6HfW7w");
+    })();
+    </script>
+</head>
+
+<body>
+    <img src="resources/choxiu.gif" alt="yay" id="choxiu" hidden/>
+    <div id="title">TÔI YÊU CẦU EM Ý KIẾN.</div>
+    <div id="subtitle">Ý KIẾN VÀO ĐÂY</br>VÀ ĐỪNG LÀM TÔI BỰC BỘI.</div>
+    <div id="textAreaKute" style="text-align: center;">
+        <textarea id="kuteInput" rows="4" placeholder="Ý kiến ngay cho tôi..."></textarea>
+    </div>
+    <div id="selection">
+        <button id="yes" class="answerBtn">TÔI KHÔNG CHO PHÉP EM LUI </br> KHI EM BẤM BÀO ĐÂY.</button>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
