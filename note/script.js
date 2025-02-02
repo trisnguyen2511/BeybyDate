@@ -30,10 +30,9 @@ document.getElementById('yes').addEventListener('click', () => {
     if(!message){
         alert("EM PHẢI ĐƯA Ý KIẾN CỦA EM VÀO ĐÂY CHO TÔI.");
         document.getElementById('kuteInput').focus();
+    }else{
+        sendMail(food,place,message,url);
     }
-
-    console.log(message)
-    sendMail(food,place,message,url);
 });
 
 function sendMail(food,place,message,url) {
